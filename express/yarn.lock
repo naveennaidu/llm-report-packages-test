@@ -234,6 +234,16 @@
     "@opentelemetry/sdk-trace-base" "1.15.2"
     "@opentelemetry/semantic-conventions" "1.15.2"
 
+"@opentelemetry/instrumentation-fetch@^0.41.2":
+  version "0.41.2"
+  resolved "https://registry.yarnpkg.com/@opentelemetry/instrumentation-fetch/-/instrumentation-fetch-0.41.2.tgz#9613db85311c5d7fb4e38246b112f89f1cc92a5b"
+  integrity sha512-L4jx7kq0R5XWAf5YcekSQ3Zm/6PE/+p/6rZe4NdtC+gp9u1lrQ/Vr0lwexxubS1odghbUSFo6PXKrqc25c+2hA==
+  dependencies:
+    "@opentelemetry/core" "1.15.2"
+    "@opentelemetry/instrumentation" "0.41.2"
+    "@opentelemetry/sdk-trace-web" "1.15.2"
+    "@opentelemetry/semantic-conventions" "1.15.2"
+
 "@opentelemetry/instrumentation-http@^0.41.2":
   version "0.41.2"
   resolved "https://registry.yarnpkg.com/@opentelemetry/instrumentation-http/-/instrumentation-http-0.41.2.tgz#dad5a693eaad2113ce7ed089fa46ef98d79f2bfc"
@@ -372,6 +382,15 @@
     "@opentelemetry/propagator-jaeger" "1.15.2"
     "@opentelemetry/sdk-trace-base" "1.15.2"
     semver "^7.5.1"
+
+"@opentelemetry/sdk-trace-web@1.15.2":
+  version "1.15.2"
+  resolved "https://registry.yarnpkg.com/@opentelemetry/sdk-trace-web/-/sdk-trace-web-1.15.2.tgz#1db22d0afbd07b1287e8a331e30862eb19b24e20"
+  integrity sha512-OjCrwtu4b+cAt540wyIr7d0lCA/cY9y42lmYDFUfJ8Ixj2bByIUJ4yyd9M7mXHpQHdiR/Kq2vzsgS14Uj+RU0Q==
+  dependencies:
+    "@opentelemetry/core" "1.15.2"
+    "@opentelemetry/sdk-trace-base" "1.15.2"
+    "@opentelemetry/semantic-conventions" "1.15.2"
 
 "@opentelemetry/semantic-conventions@1.15.2":
   version "1.15.2"
@@ -1018,13 +1037,14 @@ jaeger-client@^3.15.0:
     uuid "^8.3.2"
     xorshift "^1.1.1"
 
-llm-report@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/llm-report/-/llm-report-1.0.6.tgz#43cc17ea02ca3b47abf50a95836a7fb37b782205"
-  integrity sha512-qVhqDGd9f5xQtEkdiXbbKz20w+ks4QuFNFtsPQJNmNZb2rwhBdo8kTeyL3aXK2pvfDC59PNCmhdpBzcBTv8JFg==
+llm-report@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/llm-report/-/llm-report-1.0.7.tgz#f4ef058f96db8a97d7cf2b2fabd915188f678af4"
+  integrity sha512-tizeG8QeiXc5nlxki06XI7IBaQLrK0aja6sNpVyVcP7aoCMzjjOL7OH6Yn+m40RT1AZl0pNp9Ne8o2A5NXLlwA==
   dependencies:
     "@opentelemetry/api" "^1.4.1"
     "@opentelemetry/core" "^1.15.2"
+    "@opentelemetry/instrumentation-fetch" "^0.41.2"
     "@opentelemetry/instrumentation-http" "^0.41.2"
     "@opentelemetry/sdk-node" "^0.41.2"
     "@opentelemetry/sdk-trace-base" "^1.15.2"
